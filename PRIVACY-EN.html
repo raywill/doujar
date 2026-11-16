@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Doujar Chrome extension.">
+<link rel="canonical" href="https://raywill.github.io/doujar/PRIVACY-EN.html">
+<link rel="alternate" hreflang="zh-CN" href="PRIVACY-CN.html">
+<title>Doujar Privacy Policy</title>
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{background:#fff;color:#202020}
+body{margin:0;font:17px/1.85 Georgia,"Times New Roman","Songti SC","Noto Serif CJK SC",SimSun,serif;-webkit-text-size-adjust:100%}
+main{max-width:850px;margin:64px auto;padding:0 40px}
+header{padding-bottom:24px;border-bottom:1px solid #303030;margin-bottom:34px}
+h1{font-size:32px;line-height:1.35;font-weight:600;letter-spacing:.01em;margin:0 0 18px}
+.metadata{margin:0;color:#555;font:14px/1.8 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.language{margin-top:14px;font:14px/1.7 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+h2{font-size:20px;line-height:1.55;font-weight:600;margin:32px 0 12px;break-after:avoid}
+p{margin:0 0 16px;orphans:3;widows:3}
+ul{padding-left:26px;margin:12px 0 20px}
+li{padding-left:3px;margin:10px 0}
+strong{font-weight:700}
+a{color:#164276;text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible{outline:2px solid #164276;outline-offset:4px}
+footer{border-top:1px solid #aaa;margin-top:44px;padding-top:20px;color:#555;font:13px/1.8 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+footer p{margin-bottom:8px}
+.policy-links{list-style:none;padding:0;margin:24px 0}
+.policy-links li{padding:0;margin:18px 0}
+.policy-links a{font-size:19px}
+@media(max-width:600px){body{font-size:16px}main{margin:32px auto;padding:0 22px}h1{font-size:27px}h2{font-size:19px}header{padding-bottom:20px;margin-bottom:26px}}
+@media print{@page{size:A4;margin:20mm}body{font-size:11pt;line-height:1.65}main{max-width:none;margin:0;padding:0}h1{font-size:22pt}h2{font-size:13pt}a{color:inherit}.language{display:none}footer{font-size:9pt}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Doujar Privacy Policy</h1>
+<p class="metadata"><time datetime="2026-11-17">Last updated: November 17, 2026</time></p>
+<nav class="language" aria-label="Language version"><a href="PRIVACY-CN.html" hreflang="zh-CN" lang="zh-CN">简体中文</a></nav>
+</header>
+<article aria-label="Doujar Privacy Policy">
+<h2>1. Scope of This Policy</h2>
+<p>Doujar is a Chrome extension that helps you understand webpages using the native Doubao website in Chrome&#39;s side panel. This policy describes how the extension handles data for page summaries, selected-text questions, source references, and guided reading. Doujar uses your existing Doubao login and does not require an API key.</p>
+<h2>2. Information Processed</h2>
+<ul>
+<li><strong>Website content and page information:</strong> rendered webpage text, selected text, page titles, URLs, capture times, and source markers. When the sidebar opens or its associated page changes, loads, or is refreshed, Doujar extracts relevant page content locally. It does not scan every page&#39;s body in the background or access Chrome&#39;s browsing history database. URLs can include query parameters and other sensitive information.</li>
+<li><strong>Questions and conversations:</strong> questions you submit, guided reading answers you submit for feedback, and related native Doubao messages and replies. Doujar reads relevant native replies locally to display reading exercises and feedback. Messages and replies remain visible in the native conversation.</li>
+<li><strong>Preferences:</strong> interface language, sidebar scope, selection toolbar settings, custom actions, and page or domain exclusions. These preferences are saved locally without account synchronization by Doujar.</li>
+</ul>
+<p>The selection toolbar handles selections locally on ordinary HTTP and HTTPS webpages. Its password-field exclusion does not guarantee that other page text or messages contain no sensitive information. Doujar does not automatically detect or redact sensitive content.</p>
+<h2>3. Disclosure to Doubao</h2>
+<p>Doujar submits webpage text, selected text, or reading answers as native Doubao chat messages when you explicitly invoke an AI action or send a message. Submitting a guided reading answer can include its question, earlier answers and feedback for that question, and the source snapshot used for the exercise. Multiple-choice selections and their local grading results are not submitted again to Doubao.</p>
+<p>Before you submit a chat message, Doujar also places the current page&#39;s title and URL, and recent source URLs and source markers, inside the embedded Doubao page to display context and recognize source references. Scripts running on that page may read this metadata. You do not need to send a chat message for this metadata to become available to the embedded page.</p>
+<p>The embedded Doubao website loads when the sidebar opens. Its own network requests, login, cookies, data retention, and use of submitted messages are governed by Doubao&#39;s policies and your account settings. This policy does not promise that Doubao will delete, retain, or use data in any particular way.</p>
+<h2>4. Local Storage and Data Retention</h2>
+<p>Doujar keeps up to 30 recent page snapshots and source mappings, plus pending selected-text requests, in Chrome&#39;s extension session storage. This storage is cleared when the browser session ends or the extension is reloaded, updated, disabled, or removed. Preferences remain in local extension storage until changed or removed.</p>
+<p>Reading progress, multiple-choice answers, and unfinished guided reading answers remain in the current sidebar instance&#39;s memory. Minimizing a reading view preserves that state; disposing of or reloading the sidebar instance does not restore it. Doujar does not copy chats or drafts into persistent extension storage for restoration. A fresh sidebar instance clears the native input&#39;s existing unsent draft once; reconnecting or reloading the AI page within that instance does not trigger another clear.</p>
+<h2>5. Use of Information and Developer Access</h2>
+<p>Doujar has no developer-operated backend or analytics. The extension does not send webpage content, conversations, or local settings to the developer. It does not sell user data or use it for advertising, profiling, creditworthiness, lending, or purposes unrelated to webpage reading assistance.</p>
+<p>Doujar does not extract login passwords or authentication cookies, request device geolocation, or keep click, mouse-movement, or keystroke logs. It uses selection and input events to provide its immediate interface interactions. The Copy action writes selected content to your local clipboard.</p>
+<p>Developer-enabled diagnostics, when used, stay in sidebar memory and may include task identifiers, reading counters, and a reply excerpt of up to 300 characters. They are not automatically uploaded or persisted. Copying diagnostics requires an explicit action and writes them to the local clipboard.</p>
+<p>Data obtained through Chrome APIs is used only for the disclosed reading features, in accordance with the Chrome Web Store User Data Policy and its Limited Use requirements. Doujar requests sidePanel, storage, scripting, and HTTP/HTTPS website access; it does not request tabs or declarativeNetRequestWithHostAccess.</p>
+<h2>6. User Controls and Data Deletion</h2>
+<p>You can disable the selection toolbar globally or for a page or domain, pause it for 24 hours, change extension settings, and close or remove the extension. Removing the extension deletes its local preferences and session storage. It does not retract messages already sent to Doubao; manage those messages through Doubao&#39;s own controls.</p>
+<h2>7. Policy Website, Contact and Updates</h2>
+<p>This page is hosted on GitHub Pages. GitHub&#39;s own privacy statement applies to visits to this website. The page includes no added analytics or advertising scripts.</p>
+<p>For privacy questions, contact the developer through <a href="https://github.com/raywill/doujar/issues">raywill/doujar Issues</a>. Updates to extension data practices will be reflected in this policy and the Chrome Web Store disclosures.</p>
+</article>
+<footer>
+<p>Doujar · <a href="https://github.com/raywill/doujar">Public materials</a></p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></p>
+</footer>
+</main>
+</body>
+</html>
